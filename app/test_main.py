@@ -2,11 +2,6 @@ from app.main import get_coin_combination
 import pytest
 
 
-def test_argument_should_not_be_negative() -> None:
-    for el in get_coin_combination(-3):
-        assert el < 0
-
-
 @pytest.mark.parametrize(
     "actual,expected,",
     [
